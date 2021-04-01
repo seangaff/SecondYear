@@ -9,9 +9,9 @@
 #include "cond.c"
 
 
-int active = 0;
 int pnum; // number updated when producer runs.
 int csum; // sum computed using pnum when consumer runs.
+int active = 0;
 
 pthread_mutex_t mutex = PTHREAD_MUTEX_INITIALIZER;
 pthread_cond_t cond = PTHREAD_COND_INITIALIZER;
